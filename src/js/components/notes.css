@@ -6,24 +6,24 @@
     min-width: 164px;
     margin-left: 16px;
     line-height: 18px;
-    font-size: 12px;
+    font-size: 1em;
 }
 .my-notes-note {
     position: relative;
 
     background-color: rgba(230, 230, 230, 0.84);
     border-radius: 2px;
-
-    margin: 5px;
-    width: 146px;
+    width: auto;
     min-height: 12px;
-    padding: 10px;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 
     color: #737373;
-    font-size: 10px;
-    line-height: 1.2;
+    font-size: 1em;
+    line-height: 1.2em;
 
     -webkit-user-select: none;
 
@@ -31,8 +31,11 @@
                 margin 200ms ease;
 }
 .my-notes-note img {
-    width: 100%;
     height: auto;
+    max-height:9em;
+    max-width:100%;
+    display:inline-block;
+    text-align: center;
     opacity: 0.8;
 }
 .my-notes-note.my-notes-note-selected img {
@@ -40,12 +43,11 @@
 }
 
 h5.my-notes-note-title {
-    margin-top: 4px;
-    margin-bottom: 2px;
-
+    margin-top: 2px;
+    margin-bottom: 0.5em;
     color: #444;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1em;
+    line-height: 1em;
     font-weight: 800;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -62,15 +64,14 @@ h5.my-notes-note-title {
 
 .my-notes-note.my-notes-note-selected {
     background-color: #fafafa;
-    margin-left: 8px;
+    margin-left: -0.3em;
 }
 .my-notes-note.my-notes-note-selected.inFolderNote:after {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .my-notes-note-text {
-    white-space: pre-line;
-    max-height: 180px;
+    max-height: 70px;
     overflow-y: hidden;
     word-wrap: break-word;
 }

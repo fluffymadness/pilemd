@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Inconsolata';
     font-style: normal;
@@ -42,10 +43,7 @@ body {
 
 .my-sidebar {
     background: linear-gradient(#50A6B3, #619C9C);
-    display: flex;
-    flex-flow: column nowrap;
-    flex-basis: 270px;
-
+    width: 35%;
     z-index: 15;
 }
 
@@ -61,7 +59,7 @@ body {
 }
 
 .my-search {
-    font-size: 12px;
+    font-size: 1em;
     color: #fefefe;
     background-color: transparent;
     border: 1px solid #fefefe;
@@ -69,7 +67,7 @@ body {
     height: 32px;
     width: 160px;
 
-    margin: 0 12px 0 28px;
+    margin: 0 1em 0 1em;
     padding-left: 12px;
 
     transition: width 200ms, margin 200ms;
@@ -83,22 +81,27 @@ body {
     margin-left: 8px;
 }
 
-.my-add-note {
+.button {
     border: solid 1px #fefefe;
-    height: 45px;
+    height: 35px;
     border-radius: 50%;
-    width: 45px;
+    width: 35px;
     color: #eee;
     background-color: transparent;
     transition: background-color 200ms, border 200ms;
 }
-.my-add-note:hover {
+.button:hover {
     cursor: pointer;
     border: solid 1px rgb(115, 202, 181);
     background-color: rgb(115, 202, 181);
 }
-.my-add-note:focus {
+
+.button:focus {
     outline: none;
+}
+
+#add-note-button{
+
 }
 
 .my-sidebar-body {
@@ -107,7 +110,7 @@ body {
 }
 
 .my-shelf {
-    width: 90px;
+    width: 35%;
     height: calc(100vh - 68px - 4px);
     padding-top: 4px;
     background: transparent;
@@ -128,7 +131,7 @@ body {
     cursor: pointer;
 }
 .my-shelf-all {
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: 500;
     padding: 1px 0 1px 15px;
     border-radius: 0 2px 2px 0 / 0 2px 2px 0;
@@ -146,11 +149,12 @@ body {
 
     color: #424242;
 
-    width: 180px;
+    width: 65%;
+    padding:0.5em;
     height: calc(100vh - 68px);
 
     overflow-y: auto;
-    overflow-x: hidden;
+   /* overflow-x: hidden; */
 
     -webkit-user-select: none;
 }
@@ -178,7 +182,7 @@ body {
 }
 .my-sidebar-toggle i {
     color: #eee;
-    font-size: 12px;
+    font-size: 1em;
     margin-left: -2px;
 }
 .my-sidebar-toggle.isFullScreen i {
@@ -192,6 +196,7 @@ body {
     flex-grow: 1;
     margin: 0 auto;
     overflow-y: auto;
+    width: 65%;
 }
 
 .my-editor-header {
@@ -234,7 +239,7 @@ body {
     color: #333;
 
     font-family: "Inconsolata", "Myrica", monospace;
-    font-size: 14px;
+    font-size: 1.22em;
     line-height: 20px;
 }
 
@@ -315,6 +320,7 @@ span.cm-piled-formatting-task {
 .my-editor-preview ol{
     padding-left: 28px;
 }
+
 
 .CodeMirror span.cm-piled-header-1,
 .my-editor-preview h1 {
