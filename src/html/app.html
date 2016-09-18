@@ -1,7 +1,7 @@
 <div class="my-sidebar" v-show="!isFullScreen">
   <div class="my-sidebar-header">
     <input v-model="search" class="my-search" type="search" id="sample1" placeholder="Search notes..." />
-    <button title="Click to add note" class="my-add-note" @click="addNote()"><i class="material-icons">edit</i></button>
+    <button title="Click to add note" class="button" @click="addNote()"><i class="material-icons">edit</i></button>
   </div>
   <div class="my-sidebar-body">
     <div class="my-shelf" @contextmenu="shelfMenu()">
